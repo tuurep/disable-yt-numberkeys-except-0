@@ -1,18 +1,25 @@
-# Disable Numerical Keyboard Shortcuts on YouTube 
+# Disable YouTube Seek by Number (Except 0)
 
-## What?
-
-This is a Firefox extension which disables the `0`-`9` keyboard shortcuts on
-YouTube, which seek to a percentage of the video, i.e. the `0` key seeks the
-beginning of the video, the `1` key seeks to 10%, etc.
+This is a fork of https://github.com/timmontague/youtube-disable-number-seek
 
 ## Why?
 
-The volume control keys on my laptop are directly above the numbers:
+The addon prevents losing your place on a video if you accidentally press a number key. But there were some of us who still wanted to use <kbd>0</kbd>, because it goes to the start of the video and is useful for quickly resetting a video from the beginning.
 
-![Picture of my keyboard with volume keys above 1,2,3 keys](./keyboard.png)
+Fork born from the discussion in this issue: https://github.com/timmontague/youtube-disable-number-seek/issues/3
 
-Sometimes when I change the volume I accidentally press a number key which
-seeks to a different place in the video I am watching and causes me to lose my
-place. I have never used the number shortcuts to seek to a point in a video on
-purpose, so the easy solution is to disable the number keyboard shortcuts.
+## Other fixes
+
+Remove permissions for domains `*.invidio.us/*`, it now operates under [instances](https://api.invidious.io/)
+
+Todo: Enable permissions for any YouTube frontend which has these keybinds
+
+* done for example in [SponsorBlock](https://github.com/ajayyy/SponsorBlock)
+
+Todo: Add option to enable/disable 0 and rename both this repo and addon
+
+## Further thoughts
+
+Why not just add a toggle for all of the YouTube key shortcuts (`j`, `k`, `l`, `f`, `t`, `m`...)?
+
+* yes, that's where this is logically heading.. but I would like to start a whole new addon for that.
