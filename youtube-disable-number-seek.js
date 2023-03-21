@@ -15,7 +15,7 @@ function keyboard_event_handler(e) {
 	return;
     }
     // Trap number keys
-    if (e.key >= '0' && e.key <= '9') {
+    if (e.key >= '1' && e.key <= '9') {
 	e.stopImmediatePropagation();
     }
 }
