@@ -1,15 +1,22 @@
 {
-    "manifest_version": 2,
-    "name": "Disable YouTube Seek by Number",
-    "version": "1.1",
-
-    "description": "Disables the YouTube 0-9 keyboard shortcuts which seek to different times on a video",
-
-    "content_scripts": [
-	{
-	    "matches": ["*://*.youtube.com/*", "*://*.invidio.us/*"],
-	    "js": ["youtube-disable-number-seek.js"]
-	}
-    ]
-
+  "manifest_version": 2,
+  "name": "Disable YouTube Seek by Number (Except 0)",
+  "version": "1.1.2",
+  "description": "Disables the number keys (1-9) shortcuts on YouTube to seek time in video by percentage. This version leaves 0 enabled to go to the start of the video.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*",
+        "https://www.youtube-nocookie.com/embed/*"
+      ],
+      "js": [
+        "disable-yt-numberkeys-except-0.js"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{654264cc-cc77-4dcd-8b0c-e262eae634e4}"
+    }
+  }
 }
