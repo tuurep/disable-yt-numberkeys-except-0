@@ -1,3 +1,9 @@
+> :warning: This fork is no longer necessary since we added settings to toggle <kbd>0</kbd> in https://github.com/timmontague/youtube-disable-number-seek/issues/10
+>
+> Recommended to switch to the original v1.4:
+>
+> https://addons.mozilla.org/en-US/firefox/addon/youtube-disable-number-seek/
+
 # Disable YouTube Seek by Number (Except 0)
 
 This is a fork of https://github.com/timmontague/youtube-disable-number-seek
